@@ -1,0 +1,47 @@
+{
+    "projects": [
+      {
+        "id": 6,
+        "title": "Water-Monitoring-System",
+        "description": "The System using ESP32 and HC-SR04 Ultrasonic Sensor with WiFi module is a project that aims to provide an automated and reliable solution for monitoring the water level in various settings.",
+        "image": "watermonitoringsystem.jpeg",
+        "github": "https://github.com/anubhav1433/Water-Monitoring-System"
+      },
+      {
+        "id": 5,
+        "title": "PESU-CAFE",
+        "description": "A web application designed to provide information on the menu and product availability. Users would be able to pre-order meals or purchase meal plans online.",
+        "image": "pesu_cafe.png",
+        "github": "https://www.github.com/anubhav1433/PESU-Cafe"
+      },
+      {
+        "id": 4,
+        "title": "Portfolio Website",
+        "description": "Static portfolio website to showcase my work and projects. Developed using NextJS, with a clean and professional design.",
+        "image": "portfolio.png",
+        "github": "https://github.com/anubhav1433/AnubhavM-Portfolio"
+      },
+      {
+        "id": 3,
+        "title": "Tru-Doc",
+        "description": "A website designed using ReactJS that collects the symptoms from the patient and the ML model trained using python returns the top 5 possible diseases.",
+        "image": "trudoc.png",
+        "github": "https://github.com/anubhav1433/TruDoc"
+      },
+      {
+        "id": 2,
+        "title": "Quiz Contest",
+        "description": "A sports quiz contest nicely designed using Html,CSS and Vanilla JS for two sports that includes background audio and many inbuilt graphics as well.",
+        "image": "quiz.png",
+        "github": "https://github.com/anubhav1433/QUIZ-CONTEST"
+      },
+      {
+        "id": 1,
+        "title": "Airplane-Ticket Booking",
+        "description": "A python tkinter code where you can book your flight tickets, select seats and meals, including online web check-in and a final payment form.",
+        "image": "airplane.png",
+        "github": "https://github.com/anubhav1433/Airplane-Ticket-Booking"
+      }
+    ]
+  }
+  

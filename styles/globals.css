@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
+
+/*Heading font*/
+.fontt{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  
+}
+
+/*scroll up*/
+.top-btn {
+  font-size: 2.4rem;
+  width: 4rem;
+  height: 4rem;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+/*Cursor*/
+
+.wait {cursor: wait;}
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  background-color: white
+  }
+  .cursor::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  opacity: .5;
+  top: 5px;
+  left: 5px;
+  }
+  @keyframes cursorAnim {
+  0% {
+  transform: scale(1);
+  }
+  50% {
+  transform: scale(5);
+  }
+  100% {
+  transform: scale(1);
+  opacity: 0;
+  }
+  }
+  .expand {
+  animation: cursorAnim .5s forwards;
+  }
+
+  .cursor:nth-child(1) {
+    background-color: white;
+    z-index: 1;
+  }
+  .cursor:nth-child(2) {
+    background-color: #fff;
+  } 
+
+/*Projects*/  
+  
+img.pro:hover{
+    transform:scale(1.4);
+    
+}
+.textWithBlurredBg{
+    width:300px;
+    height:auto;
+    display:inline-block;
+    position:relative;
+    transition:.3s;
+    margin:4px;
+  }
+  
+.textWithBlurredBg img.pro{
+    width:100%;
+    height:100%;
+    transition:.3s;
+    border-radius:4px;
+    
+}
+  
+.textWithBlurredBg:hover img.pro{
+  filter:blur(2px) brightness(20%);
+    box-shadow:0 0 16px cyan;
+}
+.textWithBlurredBg :not(img.pro){
+    position:absolute;
+    z-index:1;
+    top:10%;
+    width:100%;
+    text-align:center;
+    color: teal;
+    opacity:0;
+    transition:.3s;
+    margin-bottom: 100px;
+    padding-bottom: 100;
+    background-color: rgb(17 24 39);;
+}
+  
+  .textWithBlurredBg:hover :not(img.pro){
+    
+    opacity:1;
+  }
+
+.back{
+  background-image: url('../public/background.jpg');
+}
+
+/*media query*/
+
+@media only screen and (max-width: 992px) {
+      .scroll{
+        display:none;
+      }
+}
