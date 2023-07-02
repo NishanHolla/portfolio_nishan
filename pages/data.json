@@ -2,45 +2,45 @@
     "projects": [
       {
         "id": 6,
-        "title": "Water-Monitoring-System",
-        "description": "The System using ESP32 and HC-SR04 Ultrasonic Sensor with WiFi module is a project that aims to provide an automated and reliable solution for monitoring the water level in various settings.",
-        "image": "watermonitoringsystem.jpeg",
-        "github": "https://github.com/anubhav1433/Water-Monitoring-System"
+        "title": "Open-In",
+        "description": "A platform where you can track all your socail media metrics such as views, shares , ad revenue , monetization.",
+        "image": "openin.png",
+        "github": "https://github.com/NishanHolla/Openinapp"
       },
       {
         "id": 5,
-        "title": "PESU-CAFE",
-        "description": "A web application designed to provide information on the menu and product availability. Users would be able to pre-order meals or purchase meal plans online.",
-        "image": "pesu_cafe.png",
-        "github": "https://www.github.com/anubhav1433/PESU-Cafe"
+        "title": "Emotion Detector",
+        "description": "A web application designed to predict emotion based on live facial expressions made using react,flask and opencv",
+        "image": "facescan.png",
+        "github": "https://github.com/NishanHolla/Emotify_emotion_detector_Frontend"
       },
       {
         "id": 4,
-        "title": "Portfolio Website",
-        "description": "Static portfolio website to showcase my work and projects. Developed using NextJS, with a clean and professional design.",
-        "image": "portfolio.png",
-        "github": "https://github.com/anubhav1433/AnubhavM-Portfolio"
+        "title": "Ticket Snatcher",
+        "description": "Platform to browse though movies and events going on , select seats , book tickets using one of the three payment methods.",
+        "image": "ticket.png",
+        "github": "https://github.com/NishanHolla/TicketSnatcher-ReactApp"
       },
       {
         "id": 3,
-        "title": "Tru-Doc",
-        "description": "A website designed using ReactJS that collects the symptoms from the patient and the ML model trained using python returns the top 5 possible diseases.",
-        "image": "trudoc.png",
-        "github": "https://github.com/anubhav1433/TruDoc"
+        "title": "Jingle Music app",
+        "description": "A website designed using ReactJS that lets you play your favourite tracks and seek play/pause and seek as required",
+        "image": "jingle.png",
+        "github": "https://github.com/NishanHolla/Jingle-Music-WebApp"
       },
       {
         "id": 2,
-        "title": "Quiz Contest",
-        "description": "A sports quiz contest nicely designed using Html,CSS and Vanilla JS for two sports that includes background audio and many inbuilt graphics as well.",
-        "image": "quiz.png",
-        "github": "https://github.com/anubhav1433/QUIZ-CONTEST"
+        "title": "Minreva Blogpost",
+        "description": "A blogging website that lets any user post blogs or read them, each user is recommended blogs according tp the previous blogs they have read.",
+        "image": "blog.png",
+        "github": "https://github.com/NishanHolla/Minreva_blogpost"
       },
       {
         "id": 1,
-        "title": "Airplane-Ticket Booking",
-        "description": "A python tkinter code where you can book your flight tickets, select seats and meals, including online web check-in and a final payment form.",
-        "image": "airplane.png",
-        "github": "https://github.com/anubhav1433/Airplane-Ticket-Booking"
+        "title": "My portfolio website",
+        "description": "The website you are currently viewing , gives details on myself and my projects.",
+        "image": "portfolio.png",
+        "github": ""
       }
     ]
   }
