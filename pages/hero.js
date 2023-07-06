@@ -11,7 +11,7 @@ export default function Hero() {
                 <Image src={Intro} />
             </div>
             <h3 className="font-bold text-2xl py-2 dark:md:text-3xl">
-                👨‍💻 Coding Enthusiast | Web Developer | ML
+                👨‍💻 Coding Enthusiast | Web Developer | AI/ML
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
                 {/* Looking to apply my skills to contribute to the growth of an organization. */}
