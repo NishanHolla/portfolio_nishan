@@ -21,7 +21,7 @@ export default function Experience() {
         <div data-aos="slide-up" className="text-2xl text-white hover:text-teal-500">
           <h6 className="  mr-10">☁️<span className="ml-10 text-center">12TH GRADE</span></h6>
           <p className=" ml-14">Sharada PU College</p>
-          <p className="text-center lg:mr-16">Ranchi<br />2019-2021<br />Percentage: 95%</p>
+          <p className="text-center lg:mr-16">Mangalore<br />2019-2021<br />Percentage: 95%</p>
         </div> <br />
         {/* 1 */}
         <div data-aos="slide-up" className="text-2xl text-white hover:text-teal-500">
