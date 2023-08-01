@@ -59,7 +59,7 @@ const Navbar = () => {
         <li>
           <a
             className="bg-gradient-to-r from-blue-900 text- to-teal-500 text-white  px-4 py-2 border-none rounded-md ml-20"
-            href="NishanHolla_Resume.pdf" download="NishanHolla_Resume.pdf"
+            href="https://drive.google.com/uc?export=download&id=1XH8KUvlHUtnWnMFZIkUTvtIGpSymTDuy" download="NishanHolla_Resume.pdf"
           >
             Resume
           </a>
