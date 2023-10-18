@@ -17,7 +17,7 @@ export default function Aboutt() {
       <h3 className="fontt  animate-pulse text-7xl py-1 dark:text-teal-900 text-center">ABOUT ME</h3><br /><br /><br /><br /><br />
       <div data-aos="slide-up" className="grid lg:grid-cols-3 gap-5">
       <div data-aos="slide-up" className=" from-teal-500 lg:[w-20 h-20] mx-10 ">
-          <Image src={About} height={3000} className="flex pd-50" />
+          <Image src={About} height={2800} width={2000} className="flex pd-50" />
         </div >
         <p className=" text-md pt-100 md:text-2xl leading-8 text-gray-800 dark:text-gray-200 ml-10">
           I&apos;m currently pursuing B.Tech in CSE from PES University, Bangalore.<br /><br />

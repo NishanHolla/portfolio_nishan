@@ -7,7 +7,7 @@ export default function Experience() {
     });
   }, []);
   return (<div><h3 data-aos="slide-up" className="animate-pulse text-5xl ml-20  dark:text-teal-600 md:text-center ">EXPERIENCE AND QUALIFICATIONS</h3><br /><br /><br /><br />
-    <div data-aos="slide-up" className="grid lg:grid-cols-3 md:grid-cols-2 gap-11 lg:pr-20 mx-20">
+    <div data-aos="slide-up" className="grid lg:grid-cols-2 md:grid-cols-2 gap-11 lg:pr-20 mx-20">
       {/* Education */}
       <div className=" from-teal-500 w-50 h-30 hover:bg-gray-900">
         <h4 className="fontt  text-teal-500 text-center text-4xl">MY EDUCATION</h4><br />
@@ -31,26 +31,26 @@ export default function Experience() {
         </div>
       </div >
       {/* Experience */}
-      <div className=" from-teal-500 w-50 h-30 hover:bg-gray-900">
-        <h4 className="fontt text-teal-500 text-center text-4xl">MY EXPERIENCE</h4><br />
+      
+      
+      {/* <div className=" from-teal-500 w-50 h-30 hover:bg-gray-900">
+        <h4 className="fontt text-teal-500 text-center text-4xl">MY EXPERIENCE</h4><br /> */}
         {/* 3 */}
-        <div data-aos="slide-up" className="text-2xl text-white hover:text-teal-500">
+        {/* <div data-aos="slide-up" className="text-2xl text-white hover:text-teal-500">
           <h6 className="  lg:mr-10">☁️<span className="ml-10 text-center">MANY MORE TO</span></h6>
           <h6 className="text-center">COME</h6>
-        </div> <br /><br />
+        </div> <br /><br /> */}
         {/* 2 */}
-        <div data-aos="slide-up" className="text-2xl text-white hover:text-teal-500">
+        {/* <div data-aos="slide-up" className="text-2xl text-white hover:text-teal-500">
           <h6 className="  mr-10">☁️<span className="lg:ml-10 ml-2 text-center">WEB DEVELOPER</span></h6>
           <p className="text-center">HoPes PESURR</p>
           <p className="text-center lg:mr-10">Apr&apos;23-Present</p>
-        </div> <br /><br />
+        </div> <br /><br /> */}
         {/* 1 */}
-        <div data-aos="slide-up" className="text-2xl text-white hover:text-teal-500">
-          <h6 className="  mr-10">☁️<span className="lg:ml-10 ml-3 text-center">WEB DEV INTERN</span></h6>
-          <p className="text-center">TwiLearn</p>
-          <p className="text-center">Apr&apos;23-May&apos;23</p>
-        </div>
-      </div >
+        
+      {/* </div > */}
+
+
       {/* Responsibilities */}
       <div className=" from-teal-500 w-50 h-30 hover:bg-gray-900">
         <h4 className="fontt  text-teal-500 text-center text-3xl">MY RESPONSIBILITIES</h4><br />
