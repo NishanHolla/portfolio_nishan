@@ -1,68 +1,95 @@
-import Image from "next/image";
-import Next from "../public/next.png"
 import { useEffect } from "react";
-import AOS from 'aos'
-
-
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Skills() {
     useEffect(() => {
-        AOS.init({
-        });
+        AOS.init({ duration: 1200 });
     }, []);
 
     return (
-        <div>
-            <h3 data-aos="slide-up" className="fontt animate-pulse text-7xl py-1  dark:text-teal-900 text-center">SKILLS</h3><br /><br /><br /><br /><br /><br />
-            <div data-aos="slide-up" className="grid lg:grid-cols-2 gap-5 bg-gray-700">
-                <div data-aos="slide-up">
-                    <h4 data-aos="slide-up" className="font-burtons animate-pulse text-4xl py-1 dark:text-teal-600 text-center">Languages & Frameworks</h4><br /><br />
-                    <div className="grid grid-cols-4 gap-1 pl-20 ">
-                        <a href="https://www.cprogramming.com/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40" /> </a>
-                        <a href="https://www.w3schools.com/cpp/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40" /> </a>
-                        <a href="https://www.java.com" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40" /> </a>
-                        <a href="https://www.python.org" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40" /> </a>
-                    </div><br />
-                    <div className="grid grid-cols-4 gap-1 pl-20">
-                        <a href="https://www.w3.org/html/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" /> </a>
-                        <a href="https://www.w3schools.com/css/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" /> </a>
-                        <a href="https://tailwindcss.com/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <svg height="60" viewBox=".16 .18 799.8 98.72" width="100" xmlns="http://www.w3.org/2000/svg"><path d="m248.04 41.78h-14.42v27.79c0 7.41 4.89 7.29 14.42 6.83v11.23c-19.3 2.32-26.98-3.01-26.98-18.06v-27.79h-10.7v-12.05h10.7v-15.55l12.56-3.7v19.25h14.42zm54.98-12.05h12.56v57.9h-12.56v-8.34c-4.42 6.14-11.29 9.85-20.36 9.85-15.81 0-28.95-13.32-28.95-30.46 0-17.25 13.14-30.45 28.95-30.45 9.07 0 15.94 3.7 20.36 9.72zm-18.38 47.48c10.47 0 18.38-7.76 18.38-18.53s-7.91-18.53-18.38-18.53-18.37 7.76-18.37 18.53 7.9 18.53 18.37 18.53zm51.87-56.16c-4.42 0-8.03-3.71-8.03-7.99.01-1.05.22-2.09.62-3.06a7.997 7.997 0 0 1 4.34-4.32c.97-.4 2.02-.61 3.07-.61s2.09.21 3.07.61c.97.4 1.85.99 2.6 1.73.74.75 1.33 1.63 1.74 2.59.4.97.61 2.01.61 3.06 0 4.28-3.6 7.99-8.02 7.99zm-6.28 66.58v-57.9h12.56v57.9zm27.1 0v-84.53h12.56v84.53zm94.08-57.9h13.26l-18.26 57.9h-12.33l-12.09-39.02-12.21 39.02h-12.33l-18.26-57.9h13.26l11.28 39.95 12.21-39.95h11.98l12.09 39.95zm28.84-8.68c-4.42 0-8.02-3.71-8.02-7.99 0-1.05.21-2.09.61-3.06.41-.96 1-1.84 1.74-2.59.75-.74 1.63-1.33 2.6-1.73.98-.4 2.02-.61 3.07-.61a8.044 8.044 0 0 1 5.67 2.34c.75.75 1.34 1.63 1.74 2.59.41.97.62 2.01.62 3.06 0 4.28-3.61 7.99-8.03 7.99zm-6.28 66.58v-57.9h12.56v57.9zm80.02-35.55v35.55h-12.56v-34.27c0-8.81-5.12-13.44-13.03-13.44-8.26 0-14.77 4.87-14.77 16.68v31.03h-12.56v-57.9h12.56v7.41c3.84-6.02 10.12-8.91 18.03-8.91 13.02 0 22.33 8.8 22.33 23.85zm59.54-45.51h12.56v81.06h-12.56v-8.34c-4.42 6.14-11.28 9.85-20.35 9.85-15.82 0-28.96-13.32-28.96-30.46 0-17.25 13.14-30.45 28.96-30.45 9.07 0 15.93 3.7 20.35 9.72zm-18.37 70.64c10.46 0 18.37-7.76 18.37-18.53s-7.91-18.53-18.37-18.53c-10.47 0-18.38 7.76-18.38 18.53s7.91 18.53 18.38 18.53zm42.33-18.53c0-17.25 13.14-30.45 30.7-30.45 11.4 0 21.28 5.9 25.93 14.94l-10.81 6.25c-2.56-5.44-8.26-8.92-15.24-8.92-10.23 0-18.02 7.76-18.02 18.18s7.79 18.18 18.02 18.18c6.98 0 12.68-3.59 15.47-8.91l10.82 6.13c-4.89 9.15-14.77 15.06-26.17 15.06-17.56 0-30.7-13.32-30.7-30.46zm108.85 12.62c0 11.58-10.12 17.84-22.68 17.84-11.63 0-20-5.22-23.72-13.55l10.81-6.26c1.87 5.22 6.52 8.34 12.91 8.34 5.59 0 9.89-1.85 9.89-6.48 0-10.31-31.28-4.52-31.28-25.25 0-10.88 9.42-17.71 21.28-17.71 9.53 0 17.44 4.4 21.51 12.04l-10.58 5.91c-2.09-4.52-6.16-6.6-10.93-6.6-4.54 0-8.49 1.96-8.49 6.13 0 10.54 31.28 4.17 31.28 25.59zm53.62 0c0 11.58-10.12 17.84-22.68 17.84-11.63 0-20.01-5.22-23.73-13.55l10.82-6.26c1.86 5.22 6.51 8.34 12.91 8.34 5.58 0 9.88-1.85 9.88-6.48 0-10.31-31.28-4.52-31.28-25.25 0-10.88 9.42-17.71 21.28-17.71 9.54 0 17.45 4.4 21.52 12.04l-10.59 5.91c-2.09-4.52-6.16-6.6-10.93-6.6-4.53 0-8.49 1.96-8.49 6.13 0 10.54 31.29 4.17 31.29 25.59z" /><path d="m82.79.18c-22.03 0-35.81 10.97-41.32 32.91 8.27-10.97 17.91-15.09 28.93-12.35 6.28 1.57 10.77 6.11 15.75 11.14 8.1 8.18 17.48 17.66 37.96 17.66 22.03 0 35.8-10.97 41.31-32.91-8.26 10.97-17.9 15.08-28.92 12.34-6.28-1.56-10.78-6.11-15.75-11.13-8.1-8.19-17.48-17.66-37.96-17.66zm-41.32 49.36c-22.03 0-35.8 10.97-41.31 32.91 8.26-10.97 17.9-15.08 28.92-12.34 6.29 1.56 10.78 6.11 15.75 11.13 8.1 8.19 17.48 17.66 37.96 17.66 22.04 0 35.81-10.97 41.32-32.91-8.27 10.97-17.91 15.09-28.92 12.35-6.29-1.57-10.78-6.11-15.76-11.14-8.1-8.18-17.48-17.66-37.96-17.66z" fill="#06b6d4" /></svg> </a>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" /> </a>
-                    </div><br />
-                    <div className="grid grid-cols-4 gap-1 pl-20">
-                        <a href="https://reactjs.org/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40" /></a>
-                        <a href="https://expressjs.com" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40" /> </a>
-                        <a href="https://nodejs.org" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40" /> </a>
-                        <a href="https://nextjs.org/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <Image src={Next} alt="nextjs" width="65" height="40" /> </a>
-                    </div>
-                    <br />
-                    <div className="grid grid-cols-4 gap-1 pl-20">
-                        <a href="https://www.mongodb.com/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40" /> </a>
-                        <a href="https://getbootstrap.com" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40" /> </a>
+        <div className="py-10 bg-gradient-to-r from-gray-800 to-black">
+            {/* Title */}
+            <h3 data-aos="fade-up" className="text-7xl font-extrabold text-teal-400 text-center animate-pulse mb-10">SKILLS</h3>
+
+            {/* Skill Categories */}
+            <div className="grid lg:grid-cols-2 gap-10 px-10">
+
+                {/* Frontend Skills */}
+                <div>
+                    <h4 data-aos="fade-right" className="text-4xl font-bold text-center text-indigo-300 mb-6">Frontend Development</h4>
+                    <div className="grid grid-cols-3 gap-4 text-center text-white">
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Next JS</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Three JS</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>React JS</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Redux</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Tailwind CSS</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Flask</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>HTML</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>CSS</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>JavaScript</p></div>
                     </div>
                 </div>
-                <div className="text-center mr-20">
-                    <h4 data-aos="slide-up" className="font-burtons animate-pulse text-4xl py-1 ml-10 dark:text-teal-600 text-center">🔧Tools</h4><br />
-                    <div className="grid grid-cols-4 gap-1 pl-20 ml-10">
-                        <div></div>
-                        <a href="https://www.linux.org/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40" /> </a>
-                        <a href="https://www.mathworks.com/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40" /> </a>
-                    </div><br />
-                    <div className="grid grid-cols-4 gap-1 pl-20 ml-10">
-                        <div></div>
-                        <a href="https://git-scm.com/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40" /> </a>
-                        <a href="https://www.github.com" className="hover:translate-y-[-10px]" ><svg xmlns="http://www.w3.org/2000/svg" className=" h-10 w-10" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" /></svg></a>
-                    </div><br />
-                    <div className="grid grid-cols-4 gap-1 pl-20 ml-10">
-                        <div></div>
-                        <a href="https://code.visualstudio.com/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" viewBox="0 0 24 24"><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z" fill="blue"></path></svg></a>
-                        <a href="https://vercel.com/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"><svg className="h-10 w-20" viewBox="0 0 283 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M141.04 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM248.72 16c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zM200.24 34c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9V5h9zM36.95 0L73.9 64H0L36.95 0zm92.38 5l-27.71 48L73.91 5H84.3l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10V51h-9V17h9v9.2c0-5.08 5.91-9.2 13.2-9.2z" fill="#000" /></svg></a>
-                    </div><br />
-                    <div className="grid grid-cols-4 gap-1 pl-20 ml-10">
-                        <div></div>
-                        <a href="https://www.canva.com/" className="hover:translate-y-[-10px]" target="_blank" rel="noreferrer"><svg className="h-10 w-10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Canva</title><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zM6.962 7.68c.754 0 1.337.549 1.405 1.2.069.583-.171 1.097-.822 1.406-.343.171-.48.172-.549.069-.034-.069 0-.137.069-.206.617-.514.617-.926.548-1.508-.034-.378-.308-.618-.583-.618-1.2 0-2.914 2.674-2.674 4.629.103.754.549 1.646 1.509 1.646.308 0 .65-.103.96-.24.5-.264.799-.47 1.097-.8-.073-.885.704-2.046 1.851-2.046.515 0 .926.205.96.583.068.514-.377.582-.514.582s-.378-.034-.378-.17c-.034-.138.309-.07.275-.378-.035-.206-.24-.274-.446-.274-.72 0-1.131.994-1.029 1.611.035.275.172.549.447.549.205 0 .514-.31.617-.755.068-.308.343-.514.583-.514.102 0 .17.034.205.171v.138c-.034.137-.137.548-.102.651 0 .069.034.171.17.171.092 0 .436-.18.777-.459.117-.59.253-1.298.253-1.357.034-.24.137-.48.617-.48.103 0 .171.034.205.171v.138l-.136.617c.445-.583 1.097-.994 1.508-.994.172 0 .309.102.309.274 0 .103 0 .274-.069.446-.137.377-.309.96-.412 1.474 0 .137.035.274.207.274.171 0 .685-.206 1.096-.754l.007-.004c-.002-.068-.007-.134-.007-.202 0-.411.035-.754.104-.994.068-.274.411-.514.617-.514.103 0 .205.069.205.171 0 .035 0 .103-.034.137-.137.446-.24.857-.24 1.269 0 .24.034.582.102.788 0 .034.035.069.07.069.068 0 .548-.445.89-1.028-.308-.206-.48-.549-.48-.96 0-.72.446-1.097.858-1.097.343 0 .617.24.617.72 0 .308-.103.65-.274.96h.102a.77.77 0 0 0 .584-.24.293.293 0 0 1 .134-.117c.335-.425.83-.74 1.41-.74.48 0 .924.205.959.582.068.515-.378.618-.515.618l-.002-.002c-.138 0-.377-.035-.377-.172 0-.137.309-.068.274-.376-.034-.206-.24-.275-.446-.275-.686 0-1.13.891-1.028 1.611.034.275.171.583.445.583.206 0 .515-.308.652-.754.068-.274.343-.514.583-.514.103 0 .17.034.205.171 0 .069 0 .206-.137.652-.17.308-.171.48-.137.617.034.274.171.48.309.583.034.034.068.102.068.102 0 .069-.034.138-.137.138-.034 0-.068 0-.103-.035-.514-.205-.72-.548-.789-.891-.205.24-.445.377-.72.377-.445 0-.89-.411-.96-.926a1.609 1.609 0 0 1 .075-.649c-.203.13-.422.203-.623.203h-.17c-.447.652-.927 1.098-1.27 1.303a.896.896 0 0 1-.377.104c-.068 0-.171-.035-.205-.104-.095-.152-.156-.392-.193-.667-.481.527-1.145.805-1.453.805-.343 0-.548-.206-.582-.55v-.376c.102-.754.377-1.2.377-1.337a.074.074 0 0 0-.069-.07c-.24 0-1.028.824-1.166 1.373l-.103.445c-.068.309-.377.515-.582.515-.103 0-.172-.035-.206-.172v-.137l.046-.233c-.435.31-.87.508-1.075.508-.308 0-.48-.172-.514-.412-.206.274-.445.412-.754.412-.352 0-.696-.24-.862-.593-.244.275-.523.553-.852.764-.48.309-1.028.549-1.68.549-.582 0-1.097-.309-1.371-.583-.412-.377-.651-.96-.686-1.509-.205-1.68.823-3.84 2.4-4.8.378-.205.755-.343 1.132-.343zm9.77 3.291c-.104 0-.172.172-.172.343 0 .274.137.583.309.755a1.74 1.74 0 0 0 .102-.583c0-.343-.137-.515-.24-.515z" /></svg></a>
-                    </div><br />
+
+                {/* Backend Skills */}
+                <div>
+                    <h4 data-aos="fade-left" className="text-4xl font-bold text-center text-green-300 mb-6">Backend Development</h4>
+                    <div className="grid grid-cols-3 gap-4 text-center text-white">
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>TypeScript</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>MongoDB</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>RESTful APIs</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>MySQL</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Node JS</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Express JS</p></div>
+                    </div>
+                </div>
+
+                {/* App Development */}
+                <div>
+                    <h4 data-aos="fade-right" className="text-4xl font-bold text-center text-pink-300 mb-6">App Development</h4>
+                    <div className="grid grid-cols-3 gap-4 text-center text-white">
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>React Native</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Flutter</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>TypeScript</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Dart</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Firebase</p></div>
+                    </div>
+                </div>
+
+                {/* AI & ML Skills */}
+                <div>
+                    <h4 data-aos="fade-left" className="text-4xl font-bold text-center text-purple-300 mb-6">AI & ML</h4>
+                    <div className="grid grid-cols-3 gap-4 text-center text-white">
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>LLMs</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Vector Embeddings</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>LangChain</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Scikit Learn</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>TensorFlow</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Neural Nets</p></div>
+                    </div>
+                </div>
+
+                {/* Big Data */}
+                <div>
+                    <h4 data-aos="fade-right" className="text-4xl font-bold text-center text-yellow-300 mb-6">Big Data</h4>
+                    <div className="grid grid-cols-3 gap-4 text-center text-white">
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Spark Streaming</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Kafka</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>MapReduce</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Hadoop</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Zookeeper</p></div>
+                    </div>
+                </div>
+
+                {/* DevOps */}
+                <div>
+                    <h4 data-aos="fade-left" className="text-4xl font-bold text-center text-red-300 mb-6">DevOps</h4>
+                    <div className="grid grid-cols-3 gap-4 text-center text-white">
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Docker</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Kubernetes</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Jenkins</p></div>
+                        <div className="transform transition duration-500 hover:scale-110 animate-bounce"><p>Git</p></div>
+                    </div>
                 </div>
             </div>
         </div>

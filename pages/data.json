@@ -2,17 +2,17 @@
     "projects": [
       {
         "id": 6,
-        "title": "Open-In",
+        "title": "Open-App",
         "description": "A platform where you can track all your socail media metrics such as views, shares , ad revenue , monetization.",
         "image": "openin.png",
         "github": "https://github.com/NishanHolla/Openinapp"
       },
       {
         "id": 5,
-        "title": "Emotion Detector",
-        "description": "A web application designed to predict emotion based on live facial expressions made using react,flask and opencv",
-        "image": "facescan.png",
-        "github": "https://github.com/NishanHolla/Emotify_emotion_detector_Frontend"
+        "title": "Harmony Mental Wellbeing",
+        "description": "A application designed to identify users stress and aide in getting them help and make them realize the same.",
+        "image": "harmony.png",
+        "github": "https://github.com/NishanHolla/HarmonyMentalWellbeing"
       },
       {
         "id": 4,
@@ -23,24 +23,24 @@
       },
       {
         "id": 3,
-        "title": "Jingle Music app",
-        "description": "A website designed using ReactJS that lets you play your favourite tracks and seek play/pause and seek as required",
-        "image": "jingle.png",
-        "github": "https://github.com/NishanHolla/Jingle-Music-WebApp"
+        "title": "Caring Connections Behavioural/Vital Tracker",
+        "description": "Caring Connections is a Flask web application developed at Terathon 3.0 Hackathon at PES University. The aim of Caring Connections is to help in communicating with mentally challenged individuals by tracking their vital body stats and emotions.",
+        "image": "https://private-user-images.githubusercontent.com/92212948/324545738-270b8120-6f66-4284-afb1-543d593e41b6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjY3MzY4NTAsIm5iZiI6MTcyNjczNjU1MCwicGF0aCI6Ii85MjIxMjk0OC8zMjQ1NDU3MzgtMjcwYjgxMjAtNmY2Ni00Mjg0LWFmYjEtNTQzZDU5M2U0MWI2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA5MTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwOTE5VDA5MDIzMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWZjYjc3YzE3ZDU1MjMyZTU2YTIwMjExMGRlZmU0ZGQxMWIyZDAzZTVmMjQ4MWNkMjUzM2Y4NGQxMGM5NmY3ZDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.0J0-yD30Z1-wFgYNoQTuoGsyIzsDFKp1F34-IKWeBOY",
+        "github": "https://github.com/NishanHolla/Terrathon2.0"
       },
       {
         "id": 2,
-        "title": "Minreva Blogpost",
-        "description": "A blogging website that lets any user post blogs or read them, each user is recommended blogs according tp the previous blogs they have read.",
-        "image": "blog.png",
-        "github": "https://github.com/NishanHolla/Minreva_blogpost"
+        "title": "Tree Data Visualizer",
+        "description": "This project provides an interactive interface for users to explore, manipulate, and customize tree data structures.",
+        "image": "treedata.png",
+        "github": "https://github.com/NishanHolla/Tree_Data_Visualizer"
       },
       {
         "id": 1,
         "title": "My portfolio website",
         "description": "The website you are currently viewing , gives details on myself and my projects.",
         "image": "portfolio.png",
-        "github": ""
+        "github": "https://github.com/NishanHolla/portfolio_nishan"
       }
     ]
   }
