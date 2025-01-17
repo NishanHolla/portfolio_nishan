@@ -5,13 +5,13 @@ import Image from 'next/image';
 import logo from '../public/mylogo.png';
 
 const navItems = [
-  { name: 'Home', link: 'home' },
-  { name: 'About', link: 'about' },
-  { name: 'Skills', link: 'skills' },
-  { name: 'Experience', link: 'exp' },
-  { name: 'Projects', link: 'projects' },
-  { name: 'Contact', link: 'contact' },
-  { name: "Let's Collaborate", link: 'collaborate' }, // Added new item
+  { name: 'Home', link: `${process.env.NEXT_PUBLIC_BASE_URL}/#home` },
+  { name: 'About', link: `${process.env.NEXT_PUBLIC_BASE_URL}/#about` },
+  { name: 'Skills', link: `${process.env.NEXT_PUBLIC_BASE_URL}/#skills` },
+  { name: 'Experience', link: `${process.env.NEXT_PUBLIC_BASE_URL}/#exp` },
+  { name: 'Projects', link: `${process.env.NEXT_PUBLIC_BASE_URL}/#projects` },
+  { name: 'Contact', link: `${process.env.NEXT_PUBLIC_BASE_URL}/#contact` },
+  { name: "Let's Collaborate", link: `${process.env.NEXT_PUBLIC_BASE_URL}/collaborate` }, // Updated new item
 ];
 
 const Navbar = () => {
