@@ -5,13 +5,13 @@ import Image from 'next/image';
 import logo from '../public/mylogo.png';
 
 const navItems = [
-  { name: 'Home', link: '#home' },
-  { name: 'About', link: '#about' },
-  { name: 'Skills', link: '#skills' },
-  { name: 'Experience', link: '#exp' },
-  { name: 'Projects', link: '#projects' },
-  { name: 'Contact', link: '#contact' },
-  { name: "Let's Collaborate", link: '#collaborate' }, // Added new item
+  { name: 'Home', link: 'home' },
+  { name: 'About', link: 'about' },
+  { name: 'Skills', link: 'skills' },
+  { name: 'Experience', link: 'exp' },
+  { name: 'Projects', link: 'projects' },
+  { name: 'Contact', link: 'contact' },
+  { name: "Let's Collaborate", link: 'collaborate' }, // Added new item
 ];
 
 const Navbar = () => {
