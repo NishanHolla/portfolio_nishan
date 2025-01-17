@@ -13,7 +13,7 @@ import {
 import { styled } from "@mui/system";
 import emailjs from "emailjs-com";
 import Navbar from "./Navbar"; // Importing Navbar
-import Footer from "./Footer"; // Importing Footer
+import Footer from "./footer"; // Importing Footer
 import WorkIcon from "@mui/icons-material/Work";
 import background from "../public/background.jpg"; // Importing background image
 
