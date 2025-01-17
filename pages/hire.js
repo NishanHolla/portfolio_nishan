@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, Button, MenuItem, Typography, Container, Paper, Grid, Avatar } from '@mui/material';
+import { TextField, Button, MenuItem, Typography, Container, Paper, Grid, Avatar, CircularProgress } from '@mui/material';
 import { styled } from '@mui/system';
 import emailjs from 'emailjs-com';
 import Navbar from './Navbar'; // Importing Navbar
@@ -60,9 +60,11 @@ const FormPage = () => {
   const [email, setEmail] = useState('');
   const [inquiry, setInquiry] = useState('');
   const [description, setDescription] = useState('');
+  const [loading, setLoading] = useState(false); // Loading state
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = () => {
+    console.log('Form submitted'); // Debugging log
+    setLoading(true); // Set loading state to true
 
     const templateParams = {
       email,
@@ -70,11 +72,18 @@ const FormPage = () => {
       description,
     };
 
-    emailjs.send('SERVICE_ID', 'TEMPLATE_ID', templateParams, 'USER_ID')
+    emailjs.send(
+      process.env.NEXT_PUBLIC_SERVICE_ID, 
+      process.env.NEXT_PUBLIC_TEMPLATE_ID, 
+      templateParams, 
+      process.env.NEXT_PUBLIC_USER_ID
+    )
       .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
+        console.log('EmailJS SUCCESS!', response.status, response.text); // Debugging log
+        setLoading(false); // Set loading state to false after success
       }, (err) => {
-        console.log('FAILED...', err);
+        console.log('EmailJS FAILED...', err); // Debugging log
+        setLoading(false); // Set loading state to false after failure
       });
 
     // Reset form fields
@@ -107,73 +116,72 @@ const FormPage = () => {
               </Typography>
             </Grid>
             <Grid item xs={12}>
-              <form onSubmit={handleSubmit}>
-                <TextField
-                  label="Email"
-                  fullWidth
-                  margin="normal"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  InputLabelProps={{
-                    style: { color: '#FFFFFF' }, // White label
-                  }}
-                  InputProps={{
-                    style: { color: '#FFFFFF' }, // White input text
-                  }}
-                />
-                <TextField
-                  label="Inquiry Type"
-                  fullWidth
-                  select
-                  margin="normal"
-                  value={inquiry}
-                  onChange={(e) => setInquiry(e.target.value)}
-                  required
-                  InputLabelProps={{
-                    style: { color: '#FFFFFF' }, // White label
-                  }}
-                  InputProps={{
-                    style: { color: '#FFFFFF' }, // White input text
-                  }}
-                >
-                  {inquiryOptions.map((option) => (
-                    <MenuItem key={option.value} value={option.value}>
-                      {option.label}
-                    </MenuItem>
-                  ))}
-                </TextField>
-                <TextField
-                  label="Additional Details"
-                  fullWidth
-                  multiline
-                  rows={4}
-                  margin="normal"
-                  value={description}
-                  onChange={(e) => setDescription(e.target.value)}
-                  InputLabelProps={{
-                    style: { color: '#FFFFFF' }, // White label
-                  }}
-                  InputProps={{
-                    style: { color: '#FFFFFF' }, // White input text
-                  }}
-                />
-                <Button
-                  type="submit"
-                  variant="contained"
-                  color="secondary"
-                  fullWidth
-                  sx={{
-                    mt: 3,
-                    backgroundColor: '#e91e63', // Heart-like color
-                    '&:hover': {
-                      backgroundColor: '#c2185b',
-                    }
-                  }}
-                >
-                  Submit
-                </Button>
-              </form>
+              <TextField
+                label="Email"
+                fullWidth
+                margin="normal"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                InputLabelProps={{
+                  style: { color: '#FFFFFF' }, // White label
+                }}
+                InputProps={{
+                  style: { color: '#FFFFFF' }, // White input text
+                }}
+              />
+              <TextField
+                label="Inquiry Type"
+                fullWidth
+                select
+                margin="normal"
+                value={inquiry}
+                onChange={(e) => setInquiry(e.target.value)}
+                required
+                InputLabelProps={{
+                  style: { color: '#FFFFFF' }, // White label
+                }}
+                InputProps={{
+                  style: { color: '#FFFFFF' }, // White input text
+                }}
+              >
+                {inquiryOptions.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </TextField>
+              <TextField
+                label="Additional Details"
+                fullWidth
+                multiline
+                rows={4}
+                margin="normal"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                InputLabelProps={{
+                  style: { color: '#FFFFFF' }, // White label
+                }}
+                InputProps={{
+                  style: { color: '#FFFFFF' }, // White input text
+                }}
+              />
+              <Button
+                onClick={handleSubmit} // Run handleSubmit on button click
+                variant="contained"
+                color="secondary"
+                fullWidth
+                disabled={loading} // Disable button while loading
+                sx={{
+                  mt: 3,
+                  backgroundColor: '#e91e63', // Heart-like color
+                  '&:hover': {
+                    backgroundColor: '#c2185b',
+                  },
+                }}
+              >
+                {loading ? <CircularProgress size={24} /> : 'Send Proposal'}
+              </Button>
             </Grid>
           </Grid>
         </StyledPaper>
