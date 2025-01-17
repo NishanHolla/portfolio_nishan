@@ -11,6 +11,7 @@ const navItems = [
   { name: 'Experience', link: '#exp' },
   { name: 'Projects', link: '#projects' },
   { name: 'Contact', link: '#contact' },
+  { name: "Let's Collaborate", link: '#collaborate' }, // Added new item
 ];
 
 const Navbar = () => {
