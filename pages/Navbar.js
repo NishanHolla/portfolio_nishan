@@ -64,7 +64,7 @@ const Navbar = () => {
         <li>
           <a
             className="bg-gradient-to-r from-blue-900 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-20"
-            href="https://drive.google.com/file/d/1iXHN86s_C6Pi6S2IkRE2pJMwe8eQXlT6/view?usp=drive_link"
+            href="NishanHolla2025.pdf"
             download="NishanHolla_Resume.pdf"
           >
             Resume
